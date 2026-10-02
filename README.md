@@ -1,42 +1,124 @@
-# sv
+# آزمون ارزش‌های شخصی شوارتز (PVQ)
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+یک اپلیکیشن تحت وب برای انجام **آزمون ارزش‌های شخصی شوارتز (Schwartz's Personal Values Questionnaire - PVQ)** و مشاهده نتایج بر اساس نظریه ارزش‌های بنیادی شوارتز.
 
-## Creating a project
+## 🌐 دسترسی به اپلیکیشن
 
-If you're seeing this, you've probably already done this step. Congrats!
+**[مشاهده و انجام آزمون PVQ](https://ali-roustaei.github.io/pvq/)**
 
-```sh
-# create a new project
-npx sv create my-app
+> برای استفاده از آزمون نیازی به نصب نرم‌افزار نیست و می‌توانید مستقیماً از طریق مرورگر وارد شوید.
+
+## 📋 درباره آزمون
+
+پرسشنامه ارزش‌های شخصی شوارتز (PVQ) ابزاری برای بررسی ارزش‌هایی است که در تصمیم‌گیری‌ها، انتخاب‌ها و رفتارهای فرد نقش دارند.
+
+این اپلیکیشن با ارائه مجموعه‌ای از پرسش‌ها، پاسخ‌های کاربر را دریافت کرده و در پایان تصویری از ارزش‌های فردی او ارائه می‌دهد.
+
+ارزش‌های مورد بررسی شامل مواردی مانند:
+
+* **خودمختاری (Self-Direction)**
+* **تحریک‌پذیری و هیجان‌جویی (Stimulation)**
+* **لذت‌گرایی (Hedonism)**
+* **موفقیت (Achievement)**
+* **قدرت (Power)**
+* **امنیت (Security)**
+* **همنوایی (Conformity)**
+* **سنت (Tradition)**
+* **خیرخواهی (Benevolence)**
+* **جهان‌گرایی (Universalism)**
+
+## ✨ ویژگی‌ها
+
+* رابط کاربری ساده و واکنش‌گرا
+* مناسب برای استفاده در موبایل و دسکتاپ
+* نمایش مرحله‌به‌مرحله پرسش‌ها
+* محاسبه و نمایش نتایج آزمون
+* رابط کاربری فارسی و راست‌به‌چپ (RTL)
+* استفاده از فونت **Vazirmatn**
+* طراحی شده با کامپوننت‌های **Flowbite Svelte**
+
+## 🛠️ تکنولوژی‌ها
+
+این پروژه با استفاده از تکنولوژی‌های زیر ساخته شده است:
+
+* [Svelte 5](https://svelte.dev/)
+* [SvelteKit](https://svelte.dev/docs/kit)
+* [TypeScript](https://www.typescriptlang.org/)
+* [Tailwind CSS](https://tailwindcss.com/)
+* [Flowbite Svelte](https://flowbite-svelte.com/)
+* [Vite](https://vite.dev/)
+
+## 🚀 اجرای پروژه در محیط توسعه
+
+ابتدا repository را clone کنید:
+
+```bash
+git clone https://github.com/ali-roustaei/pvq.git
+cd pvq
 ```
 
-To recreate this project with the same configuration:
+سپس وابستگی‌ها را نصب کنید:
 
-```sh
-# recreate this project
-npx sv@0.17.1 create --template minimal --types ts --add prettier eslint --install npm svelte-5=course
+```bash
+npm install
 ```
 
-## Developing
+برای اجرای پروژه در محیط توسعه:
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
+```bash
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+پس از اجرا، آدرس نمایش‌داده‌شده توسط SvelteKit را در مرورگر باز کنید.
 
-To create a production version of your app:
+## 📦 ساخت نسخه Production
 
-```sh
+برای ساخت نسخه production:
+
+```bash
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+برای مشاهده نسخه ساخته‌شده به‌صورت محلی:
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+```bash
+npm run preview
+```
+
+## 🌍 انتشار روی GitHub Pages
+
+این پروژه برای انتشار به‌صورت یک سایت استاتیک روی **GitHub Pages** تنظیم شده است.
+
+آدرس نهایی پروژه:
+
+**https://ali-roustaei.github.io/pvq/**
+
+مسیر پایه پروژه نیز برای repository با نام `pvq` تنظیم شده است:
+
+```text
+/pvq
+```
+
+## 📁 ساختار کلی پروژه
+
+```text
+pvq/
+├── src/
+│   ├── lib/
+│   └── routes/
+├── static/
+├── .github/
+│   └── workflows/
+├── package.json
+├── svelte.config.js
+├── vite.config.ts
+└── README.md
+```
+
+## 📄 مجوز
+
+این پروژه یک پروژه شخصی و آموزشی است.
+
+---
+
+**ساخته‌شده توسط [Ali Roustaei](https://github.com/ali-roustaei)**
