@@ -628,10 +628,28 @@
 
 
 			<!-- Footer -->
-			<p class="mt-4 text-center text-[11px] text-gray-400">
-				حاصل اوقات فراغت 
-				<a href="https://www.linkedin.com/in/aliroustaei" target="_blank" rel="noopener noreferrer">آمیرزا</a>
-			</p>
+			<div class="mt-4 flex items-center justify-center gap-3 text-[11px] text-gray-400">
+				<span>حاصل اوقات فراغت</span>
+				<a
+					href="https://www.linkedin.com/in/aliroustaei"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="transition-colors hover:text-gray-600"
+				>
+					آمیرزا
+				</a>
+
+				<span class="text-gray-300">•</span>
+
+				<a
+					href="https://github.com/ali-roustaei/pvq"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="transition-colors hover:text-gray-600"
+				>
+					GitHub
+				</a>
+			</div>
 
 		</div>
 
