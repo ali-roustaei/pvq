@@ -4,7 +4,6 @@ import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-	base: '/pvq/',
 	plugins: [
 		tailwindcss(),
 		sveltekit({
@@ -21,7 +20,11 @@ export default defineConfig({
 				pages: 'build',
 				assets: 'build',
 				fallback: 'index.html'
-			})
+			}),
+
+			paths: {
+				base: '/pvq'
+			}
 		})
 	]
 });
