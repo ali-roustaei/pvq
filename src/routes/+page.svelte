@@ -285,7 +285,7 @@
 			</div>
 
 			<div
-				hidden={step === 0}
+				hidden={step === 0 || showResult == true}
 				class="rounded-full bg-gray-100 px-3 py-1.5 text-xs font-semibold text-gray-600"
 			>
 				{step} از {totalQuestions}
@@ -320,7 +320,7 @@
 
 								<p class="mt-2 text-sm leading-6 text-gray-500">
 									امتیاز شما در هر یک از ارزش‌های فردی شوارتز
-								</p>س
+								</p>
 							</div>
 
 
